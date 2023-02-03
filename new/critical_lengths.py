@@ -1,6 +1,6 @@
 from numpy import *
 
-import fonctions
+import functions
 
 
 n=int(input("Which dimension do you want to study?"))
@@ -13,7 +13,7 @@ for m in range(1, k+1):
     Y_m=[]
     # for each value of L, find the sharp upper bound depending on n, m, L
     for l in X:
-        Y_m.append(fonctions.sharp_upper_bound(n,m,l))
+        Y_m.append(functions.sharp_upper_bound(n,m,l))
 
 
     #find the critical length

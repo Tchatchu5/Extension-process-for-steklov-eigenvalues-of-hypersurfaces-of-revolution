@@ -1,7 +1,7 @@
 from matplotlib.pyplot import *
 from numpy import *
 
-import fonctions
+import functions
 
 n = int(input("Which dimension do you want to study?"))
 k = int(input("Which eigenvalue do you want to study?"))
@@ -11,7 +11,7 @@ X = linspace(0, 7, max(400, k**2))
 # for each value of L, find the sharp upper bound depending on n, k, L
 Y = []
 for l in X:
-    Y.append(fonctions.sharp_upper_bound(n, k, l))
+    Y.append(functions.sharp_upper_bound(n, k, l))
 # find the critical length
 y_max_index = Y.index(max(Y))
 if max(Y) > Y[-1]:
@@ -26,7 +26,7 @@ else:
     X = linspace(0, min(critical_length * 4, 7), max(400, k**2))
     Y = []
     for l in X:
-        Y.append(fonctions.sharp_upper_bound(n, k, l))
+        Y.append(functions.sharp_upper_bound(n, k, l))
     # find the critical length
     y_max_index = Y.index(max(Y))
     if max(Y) > Y[-1]:

@@ -1,7 +1,7 @@
 from numpy import *
 import sys
 import timeit
-import fonctions
+import functions
 
 
 # python -m cProfile -s time valeurs_propres_diagnostiques.py
@@ -18,7 +18,7 @@ def main():
 
 	t_0 = timeit.default_timer()
 	for j in range(1, i):
-		k = k + 2 * fonctions.mu(n, j)
+		k = k + 2 * functions.mu(n, j)
 		K.append(k)
 		t_1 = timeit.default_timer()
 		elapsed_time = round((t_1 - t_0) * 10 ** 3, 3)
@@ -29,7 +29,7 @@ def main():
 		# for each value of L, find the sharp upper bound depending on n, k, L
 		Y_j = []
 		for l in X_j:
-			Y_j.append(fonctions.sharp_upper_bound(n, k, l))
+			Y_j.append(functions.sharp_upper_bound(n, k, l))
 		if max(Y_j) > Y_j[-1]:
 			diagnosis_eigenvalue_j = 1
 		else:

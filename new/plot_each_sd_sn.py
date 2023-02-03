@@ -1,7 +1,7 @@
 from matplotlib.pyplot import *
 from numpy import *
 
-import fonctions
+import functions
 
 n = int(input("Which dimension do you want to study?"))
 k = int(input("Which eigenvalue do you want to study?"))
@@ -11,7 +11,7 @@ X = linspace(0, 7, max(400, k ** 2))
 # for each value of L, find the sharp upper bound depending on n, k, L
 Y = []
 for l in X:
-    Y.append(fonctions.sharp_upper_bound(n, k, l))
+    Y.append(functions.sharp_upper_bound(n, k, l))
 # find the critical length
 y_max_index = Y.index(max(Y))
 if max(Y) > Y[-1]:
@@ -26,7 +26,7 @@ else:
     X = linspace(0, min(critical_length * 4, 7), max(400, k ** 2))
     Y = []
     for l in X:
-        Y.append(fonctions.sharp_upper_bound(n, k, l))
+        Y.append(functions.sharp_upper_bound(n, k, l))
     # find the critical length
     y_max_index = Y.index(max(Y))
     if max(Y) > Y[-1]:
@@ -48,16 +48,16 @@ else:
     upper_bound = round(max(Y))
 
 # plotting Steklov-Dirichlet eigenvalues
-for i in range(0, fonctions.l_0(n, k) + 1):
+for i in range(0, functions.l_0(n, k) + 1):
     dirichlet_i = []
     for l in X:
-        dirichlet_i.append(fonctions.sigma_dirichlet(n, i, l))
+        dirichlet_i.append(functions.sigma_dirichlet(n, i, l))
     plot(X, dirichlet_i, "b")
 # plotting Steklov-Neumann eigenvalues
-for i in range(1, fonctions.l_0(n, k) + 2):
+for i in range(1, functions.l_0(n, k) + 2):
     neumann_i = []
     for l in X:
-        neumann_i.append(fonctions.sigma_neumann(n, i, l))
+        neumann_i.append(functions.sigma_neumann(n, i, l))
     plot(X, neumann_i, "g")
 # centering the figure
 if critical_length == round(X[y_max_index], 3):
