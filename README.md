@@ -2,15 +2,64 @@
 
 We are interested in the Steklov problem on hypersurfaces of revolution in the Euclidean space. 
 While investigating it, we discovered a strange phenomenon. 
-Some eigenvalues have a finite crtical length associated with, while others have got an infinite critical length.
+Some eigenvalues have a finite critical length associated with, while others have got an infinite critical length.
 
-We were able to prove mathematically that infinitely many eigenvalues have a finite critical lentgh, 
+We were able to prove that infinitely many eigenvalues have a finite critical length, 
 however we were **not** able to quantified how many eigenvalues have an infinite critical length associated with.
 
-There exists an algorithm, called "extension process", which gives the sharp upper bound $B_n^k(L)$ for the $k$th eigenvalue, 
-given the meridian length $L$ of the hypersurface and its dimension $n$. We used this algorithm to create four different programs,
-which allows us to check what happen to "high" eigenvalues. We were able to check roughly to the $120 000$th eigenvalue.
+There exists an algorithm, called "extension process", which gives the sharp upper bound $B_n^k(L)$ for the $k$ th eigenvalue, 
+given the meridian length $L$ of the hypersurface and its dimension $n$. We used this algorithm to create different programs,
+which allows us to check what happen to "big" eigenvalues. We were able to check roughly to the $120' 000$ th eigenvalue.
 
 These programs support the following conjecture:
 
-**Conjecture**. Given $n \ge 3$, there exist finitely many $k \in \mathbb{N}$ such that the $k$th eigenvalue has an infinite critical length associated with.
+**Conjecture**. Given $n \ge 3$, there exist $K \in \mathbb{N}$ such that for each $k \ge K$, the $k$ th eigenvalue has a finite critical length associated with.
+
+## Programs
+
+Find the programs in the folder "new". Here an overview of them.
+
+### sharp_upper_bound.py
+* Inputs:
+  * the dimension $n \ge 3$, 
+  * the eigenvalue $k \ge 1$,
+  * the meridian length $L \in (0, \infty)$.
+* Output: 
+  * the sharp upper bound $B_n^k(L)$.
+
+### plot_sharp_upper_bound.py
+* Inputs: 
+  * the dimension $n \ge 3$,
+  * the eigenvalue $k \ge 1$.
+* Outputs: 
+  * a plot of the function $L \longmapsto B_n^k(L)$, 
+  * the sharp upper bound $B_n^k := \sup_{L \in (0, \infty)} \{ B_n^k(L)\}$,
+  * the critical length $L_1 \in (0, \infty]$.
+
+
+### plot_each_sd_sn.py
+* Inputs: 
+  * the dimension $n \ge 3$,
+  * the eigenvalue $k \ge 1$.
+* Outputs: 
+  * a plot of the function $L \longmapsto B_n^k(L)$, 
+  * the sharp upper bound $B_n^k := \sup_{L \in (0, \infty)} \{ B_n^k(L)\}$, 
+  * the critical length $L_1 \in (0, \infty]$,
+  * the mixed Steklov-Dirichlet and Steklov-Neumann eigenvalues.
+
+### critical_length.py
+* Inputs: 
+  * the dimension $n \ge 3$,
+  * the eigenvalue $k \ge 1$.
+* Output: 
+  * the biggest $\tilde{k} \in (1, 2, \ldots, k)$ 
+  such that $\tilde{k}$ has an infinite critical length.
+  
+### diagnosis_eigenvalue.py
+* Inputs: 
+  * the dimension $n \ge 3$,
+  * the diagnosis eigenvalue $k \ge 1$.
+* Output: 
+  * the  biggest diagnosis eigenvalue which has an infinite critical length.
+  
+**Remark:** critical_length.py is more accurate (check all eigenvalues, not only the diagnosis ones) than diagnosis_eigenvalue.py, but the latter can check way further in a reasonnable time.
