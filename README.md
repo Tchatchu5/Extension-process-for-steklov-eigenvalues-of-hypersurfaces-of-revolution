@@ -52,7 +52,7 @@ Find the programs in the folder "new". Here an overview of them.
   * the dimension $n \ge 3$,
   * the eigenvalue $k \ge 1$.
 * Output: 
-  * the biggest $\tilde{k} \in (1, 2, \ldots, k)$ 
+  * the biggest $\tilde{k} \in \\{1, 2, \ldots, k\\}$ 
   such that $\tilde{k}$ has an infinite critical length.
   
 ### diagnosis_eigenvalue.py
