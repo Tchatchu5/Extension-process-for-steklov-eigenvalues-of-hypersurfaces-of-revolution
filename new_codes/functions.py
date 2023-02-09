@@ -97,3 +97,4 @@ def sharp_upper_bound(n, k, L):
 	return E[l1]
 	#print(f"From list: {M2}, There need to be {l1} addition to obtain accumulator >= K = {k}")
 	#print(f"From list {E}, at index {l1} = {E[l1]}")
+

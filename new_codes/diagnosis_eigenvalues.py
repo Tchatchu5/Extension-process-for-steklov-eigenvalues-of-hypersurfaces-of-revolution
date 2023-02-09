@@ -13,7 +13,7 @@ def main():
 	i = int(args[1] if len(args) > 1 else input("To which diagnosis eigenvalue do you want to study? "))
 
 	k = 2
-	K = []
+	K = [k]
 	Diag_critic_length = []
 
 	t_0 = timeit.default_timer()
@@ -47,7 +47,7 @@ def main():
 		c = c + 1
 		if Diag_critic_length[len(Diag_critic_length) - c - 1] == -1:
 			print(
-				f"In dimension {n}, from the eigenvalue number {K[len(Diag_critic_length)-c]} and to the {K[-1]}th, I only found finite critical lengths.")
+				f"In dimension {n}, from the eigenvalue number {K[len(Diag_critic_length)-c+1]} and to the {K[-1]+2*functions.mu(n, i)-1}th, I only found finite critical lengths.")
 
 
 if __name__ == "__main__":
