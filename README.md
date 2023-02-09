@@ -17,7 +17,7 @@ These programs support the following conjecture:
 
 ## Programs
 
-Find the programs in the folder "new". Here an overview of them.
+Find the programs in the folder "new_codes". Here an overview of them.
 
 ### sharp_upper_bound.py
 * Inputs:
@@ -62,4 +62,4 @@ Find the programs in the folder "new". Here an overview of them.
 * Output: 
   * the  biggest diagnosis eigenvalue which has an infinite critical length.
   
-**Remark:** critical_length.py is more accurate (check all eigenvalues, not only the diagnosis ones) than diagnosis_eigenvalue.py, but the latter can check way further in a reasonnable time.
+**Remark:** critical_length.py gives more information (check all eigenvalues, not only the diagnosis ones) than diagnosis_eigenvalue.py, but the latter can check way further in a reasonnable time.
