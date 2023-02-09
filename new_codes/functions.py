@@ -1,6 +1,7 @@
-from numpy import *
-from math import factorial
+#import numpy as np
 import functools
+
+from math import factorial
 
 # function multiplicity of the Laplace eigenvalues on a sphere
 @functools.cache

@@ -1,4 +1,4 @@
-from numpy import *
+import numpy as np
 import sys
 import timeit
 import functions
@@ -25,7 +25,7 @@ def main():
 		print(f"{j:02d}:", K, f"-- Elapsed time: {elapsed_time} ms")
 		t_0 = timeit.default_timer()
 		# first interval that we want to study
-		X_j = linspace(0, 7, max(400, k))
+		X_j = np.linspace(0, 7, max(400, k))
 		# for each value of L, find the sharp upper bound depending on n, k, L
 		Y_j = []
 		for l in X_j:

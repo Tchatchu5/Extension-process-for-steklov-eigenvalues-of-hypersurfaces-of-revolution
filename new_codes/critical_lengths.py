@@ -1,4 +1,4 @@
-from numpy import *
+import numpy as np
 
 import functions
 
@@ -7,7 +7,7 @@ n=int(input("Which dimension do you want to study?"))
 k=int(input("To which eigenvalue do you want to check?"))
 
 #interval that we want to study
-X = linspace(0, 7, max(400, k**2))
+X = np.linspace(0, 7, max(400, k**2))
 Y=[]
 for m in range(1, k+1):
     Y_m=[]
