@@ -1,4 +1,4 @@
-# Steklov problem on hypersurfaces of revolution: numerical experiment
+# Steklov problem on hypersurfaces of revolution: numerical experiments
 
 We are interested in the Steklov problem on hypersurfaces of revolution in the Euclidean space. 
 While investigating it, we discovered a strange phenomenon. 
