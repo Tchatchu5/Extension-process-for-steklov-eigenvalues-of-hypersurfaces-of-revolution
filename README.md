@@ -17,7 +17,7 @@ These programs support the following conjecture:
 
 ## Programs
 
-Find the programs in the folder "new_codes". Here an overview of them.
+Find the programs in the folder "new_codes". Here an overview of how they work.
 
 ### sharp_upper_bound.py
 * Inputs:
@@ -34,7 +34,7 @@ Find the programs in the folder "new_codes". Here an overview of them.
 * Outputs: 
   * a plot of the function $L \longmapsto B_n^k(L)$, 
   * the sharp upper bound $B_n^k := \sup_{L \in (0, \infty)} \{ B_n^k(L)\}$,
-  * the critical length $L_1 \in (0, \infty]$.
+  * the critical length $L_k \in (0, \infty]$.
 
 
 ### plot_each_sd_sn.py
@@ -44,7 +44,7 @@ Find the programs in the folder "new_codes". Here an overview of them.
 * Outputs: 
   * a plot of the function $L \longmapsto B_n^k(L)$, 
   * the sharp upper bound $B_n^k := \sup_{L \in (0, \infty)} \{ B_n^k(L)\}$, 
-  * the critical length $L_1 \in (0, \infty]$,
+  * the critical length $L_k \in (0, \infty]$,
   * the mixed Steklov-Dirichlet and Steklov-Neumann eigenvalues.
 
 ### critical_length.py
