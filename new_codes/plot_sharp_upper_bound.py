@@ -52,12 +52,12 @@ if critical_length == round(X[y_max_index], 3):
 else:
     center_x = 7
 # plotting the sharp upper bound
-plt.plot(X, Y, "r")
+plt.plot(X, Y, "r",  linewidth=3)
 # lengending according to the indicators found
 plt.title(critical_length2)
 plt.xlabel("Value of L")
 plt.ylabel(f"{k}th eigenvalue")
 plt.figtext(0.6, 0.3, f"Critical length {critical_length}", style="italic")
-plt.figtext(0.6, 0.2, f"B_{n}^{k} = {upper_bound}", style="italic")
+plt.figtext(0.6, 0.2, fr"$B_{{{n}}}^{{{k}}} $= {upper_bound}", style="italic")
 plt.axis([0, center_x, 0, max(Y) + 2])
 plt.show()
