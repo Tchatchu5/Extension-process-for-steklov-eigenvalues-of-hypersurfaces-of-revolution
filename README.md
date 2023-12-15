@@ -16,7 +16,7 @@ These programs support the following conjecture:
 
 **Conjecture**. Given $n \ge 3$, there exist $K \in \mathbb{N}$ such that for each $k \ge K$, the $k$ th eigenvalue has a finite critical length associated with.
 
-**Remark** It is now known that the conjecture is true in dimension $n=2, 3, 4$, but it is still to be proved or refuted in dimension $n \ge 5$.
+**Remark**. It is now known that the conjecture is true in dimension $n=2, 3, 4$, but it is still to be proved or refuted in dimension $n \ge 5$.
 
 ## Programs
 
