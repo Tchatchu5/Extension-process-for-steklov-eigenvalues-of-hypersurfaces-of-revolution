@@ -2,10 +2,11 @@
 
 We are interested in the Steklov problem on hypersurfaces of revolution in the Euclidean space. 
 While investigating it, we discovered a strange phenomenon. 
-Some eigenvalues have a finite critical length associated with, while others have got an infinite critical length.
+Some eigenvalues have a finite critical length associated with them, while others have got an infinite critical length.
 
 We were able to prove that infinitely many eigenvalues have a finite critical length, 
-however we were **not** able to quantified how many eigenvalues have an infinite critical length associated with.
+however we were **not** able to quantified how many eigenvalues have an infinite critical length associated with them.
+
 
 There exists an algorithm, called "extension process", which gives the sharp upper bound $B_n^k(L)$ for the $k$ th eigenvalue, 
 given the meridian length $L$ of the hypersurface and its dimension $n$. We used this algorithm to create different programs,
@@ -14,6 +15,8 @@ which allows us to check what happen to "big" eigenvalues. We were able to check
 These programs support the following conjecture:
 
 **Conjecture**. Given $n \ge 3$, there exist $K \in \mathbb{N}$ such that for each $k \ge K$, the $k$ th eigenvalue has a finite critical length associated with.
+
+**Remark** It is now known that the conjecture is true in dimension $n=2, 3, 4$, but it is still to be proved or refuted in dimension $n \ge 5$.
 
 ## Programs
 
