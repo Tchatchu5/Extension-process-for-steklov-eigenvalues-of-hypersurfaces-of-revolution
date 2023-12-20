@@ -20,7 +20,7 @@ These programs support the following conjecture:
 
 ## Programs
 
-Find the programs in the folder "new_codes". Here an overview of how they work.
+Find the programs in the folder "src". Here an overview of how they work.
 
 ### sharp_upper_bound.py
 * Inputs:
