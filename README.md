@@ -10,7 +10,7 @@ however we were **not** able to quantified how many eigenvalues have an infinite
 
 There exists an algorithm, called "extension process", which gives the sharp upper bound $B_n^k(L)$ for the $k$ th eigenvalue, 
 given the meridian length $L$ of the hypersurface and its dimension $n$. We used this algorithm to create different programs,
-which allows us to check what happen to "big" eigenvalues. We were able to check roughly to the $120' 000$ th eigenvalue.
+which allows us to check what happen to "big" eigenvalues. We were able to check roughly to the $190' 000$ th eigenvalue.
 
 These programs support the following conjecture:
 
